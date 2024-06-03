@@ -1,0 +1,32 @@
+<h1 style="color: white; text-align: center; ">Assessment test</h1>
+<div style="margin-left: 14%; color: white;">
+  <div *ngFor="let q of question; let i = index" style="background-color: #2b2a29; margin-top: 30px" class="container__question" aria-label="Question 1">
+    <div class="container__question-dec" style="font-family: 'Rage Italic'; line-height: normal">
+      {{i+1}}. {{q.question}}
+    </div>
+    <div class="form-group">
+      <div class="gird">
+        <div class="gird__column-1-2 container__answer" style="font-family: 'Rage Italic';">
+          <input type="radio" name="score_{{i}}" value="{{q.answer1}}" class="form-control" [(ngModel)]="q.clientAnswer">
+          {{q.answer1}}
+        </div>
+        <div class="gird__column-1-2 container__answer" style="font-family: 'Rage Italic';">
+          <input type="radio" name="score_{{i}}" value="{{q.answer2}}" class="form-control" [(ngModel)]="q.clientAnswer">
+          {{q.answer2}}
+        </div>
+        <div class="gird__column-1-2 container__answer" style="font-family: 'Rage Italic';">
+          <input type="radio" name="score_{{i}}" value="{{q.answer3}}" class="form-control" [(ngModel)]="q.clientAnswer">
+          {{q.answer3}}
+        </div>
+        <div class="gird__column-1-2 container__answer" style="font-family: 'Rage Italic';">
+          <input type="radio" name="score_{{i}}" value="{{q.answer4}}" class="form-control" [(ngModel)]="q.clientAnswer">
+          {{q.answer4}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <button (click)="OnSubmit()" class="btm_submit"
+          style=" border: 1px solid rgba(229, 229, 229, var(--tw-border-opacity)); border-radius: 6px; transition: transform .4s; margin-left: 34.5%; margin-top: 70px; margin-bottom: 70px; height: 47px; background-color: #2c31cf; color: white; font-weight: bolder; width: 180px">
+    submit
+  </button>
+</div>

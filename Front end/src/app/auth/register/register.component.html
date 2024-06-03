@@ -1,0 +1,16 @@
+<div id='login-form'class='login-page' style="height: 650px">
+  <div class="form-box">
+    <h1 style="color: white; margin-left: 35%; margin-top: 40px">
+      Đăng ký
+    </h1>
+    <form id='register' class='input-group-register' #heroForm="ngForm">
+      <input type='text'class='input-field'placeholder='User name' [(ngModel)]="model.username" required name="username">
+      <input type='email'class='input-field'placeholder='Email' [(ngModel)]="model.email" required name="email">
+      <input type='password'class='input-field'placeholder='Enter Password' [(ngModel)]="model.password" required name="password">
+      <input type='password'class='input-field'placeholder='Confirm Password' [(ngModel)]="model.confirmpassword" required name="confirmpassword">
+      <button (click)="onSubmit(model)" type='submit'class='submit-btn'>Đăng ký</button>
+    </form>
+  </div>
+</div>
+
+

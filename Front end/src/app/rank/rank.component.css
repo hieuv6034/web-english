@@ -1,0 +1,17 @@
+table, th, td{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+table{
+  border-collapse:collapse;
+}
+th, td{
+  padding:10px;
+}
+tr:hover{
+  background-color: #262020;
+  cursor:pointer;
+}
+table tr:nth-child(1){
+  background-color: #920f2d;
+}

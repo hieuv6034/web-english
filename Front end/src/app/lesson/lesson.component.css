@@ -1,0 +1,137 @@
+:root{
+
+}
+
+*{
+  box-sizing: inherit;
+}
+
+
+/* grid */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.gird__full-width {
+  width: 100%;
+}
+.gird__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.app__container {
+  position: relative;
+}
+
+.container__title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.container__block {
+  align-items: center;
+  padding: 8px;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+.container__name {
+  padding-left: 24px;
+  padding-right: 24px;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #212b37;
+}
+
+.container__block-circle {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
+.container__block-item {
+  align-items: center;
+  padding-top: 1px;
+}
+.container__block-icon {
+  font-size: 2rem;
+  color: #44bfa3;
+}
+
+/* img */
+.slide__link-img {
+  border-radius: 20px;
+  height: 269px;
+
+}
+
+/* list study */
+.container__study {
+  min-height: 50px;
+  align-items: stretch;
+  align-items: center;
+  position: relative;
+  background-color: #191919;
+  border-radius: 16px;
+}
+.container__list {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.container__item {
+  margin-top: 0;
+  color: #8291a3;
+  background-image: url(src/assets/wallpaper_800x600_773.jpg);
+  background-repeat: repeat;
+  background-size: 200px;
+  height: 56px;
+  margin-top: 8px;
+  border-radius: 36px;
+  display: flex;
+  text-decoration: none;
+  padding: 4px;
+  justify-content: space-between;
+  transition: transform .4s;
+}
+
+.container__item:hover {
+  transform: scale(1.1);
+  background-color: #a8093a;
+  background-image: none;
+}
+.container__item-left {
+  display: flex;
+}
+.container__item-number {
+  margin: 0px 18px 0px 0px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 3px solid white;
+  font-size: 25px; font-family: Roboto; font-weight: bolder;
+  color: white;
+  transition: .4s;
+}
+.container__item-icon {
+  font-size: 2rem;
+}
+.container__item-tilte {
+  margin-top: 11px;
+  color: white; font-size:
+  25px; font-family: Roboto;
+  font-weight: bolder;
+  transition: .4s;
+}
+

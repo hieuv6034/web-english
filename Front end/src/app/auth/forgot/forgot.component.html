@@ -1,0 +1,16 @@
+
+<div id='login-form'class='login-page' style="height: 650px">
+  <div class="form-box">
+    <h1 style="color: white; margin-left: 30%; margin-top: 30px">
+      Nhập email
+    </h1>
+    <form id='login' class='input-group-login'>
+      <input  type='email'class='input-field'placeholder='Enter Email' required [(ngModel)]="model" name="password">
+      <button  style="margin-top: 30px" type='submit'class='submit-btn' *ngIf="this.status && model != null" (click)="onSubmit(model)" >Gửi mật khẩu mới tới email</button>
+      <button style="margin-top: 30px" type='submit'class='submit-btn' *ngIf="!this.status" (click)="onSubmit(model)" >Đang gửi mật khẩu ...........</button>
+    </form>
+  </div>
+</div>
+<div class="alert alert-success">
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>

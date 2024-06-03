@@ -1,0 +1,59 @@
+table, th, td{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+table{
+  border-collapse:collapse;
+  border-radius:8px;
+}
+th, td{
+  padding:10px;
+}
+tr:hover{
+  background-color: #262020;
+  cursor:pointer;
+}
+table tr:nth-child(1){
+  background-color: #920f2d;
+}
+.btn-is-auth {
+  background-color: #a80a3b;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 10px;
+  transition: transform .4s;
+}
+
+.btn-is-auth:hover {
+  transform: scale(1.2);
+}
+.input-group-login
+{
+  width: 500px;
+  margin-bottom: 30px;
+  transition:.5s;
+}
+.submit-btn {
+  width: 100px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #f9004d;
+  border: 0;
+  border-radius: 30px;
+}
+.input-field
+{
+  width: 60%;
+  padding:10px 0;
+  margin:5px 0;
+  border-left:0;
+  border-top:0;
+  border-right:0;
+  border-bottom: 1px solid #999;
+  outline:none;
+  background: transparent;
+  color: white;
+}

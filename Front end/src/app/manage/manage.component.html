@@ -1,0 +1,32 @@
+<h1 style="margin-top: 70px; color: white; display: flex;
+  justify-content: center;
+  align-items: center;">Manage user</h1>
+
+<div style="display: flex;
+  justify-content: center;
+  align-items: center; margin-bottom: 100px; margin-top: 80px">
+  <div>
+    <form id='login' class='input-group-login'>
+      <input  type='email'class='input-field'placeholder='Enter name' [(ngModel)]="name" required  name="password">
+      <a><button  style="margin-left: 30px" type='submit'class='submit-btn' (click)="onSearch()" >Search</button></a>
+    </form>
+  <table border="1" style="border-radius: 8px; border: 1px solid white; color: white">
+    <tr>
+      <th style="width: 120px; height: 30px">Id</th>
+      <th style="width: 290px">User name</th>
+      <th style="width: 120px">Point</th>
+      <th style="width: 160px">Cấm</th>
+      <th style="width: 220px">Role</th>
+      <th style="width: 100px; text-align: center"></th>
+    </tr>
+    <tr *ngFor="let u of user" style="text-align: center">
+      <td style="height: 30px">{{u.userID}}</td>
+      <td>{{u.username}}</td>
+      <td>{{u.point}}</td>
+      <td>{{u.banned}}</td>
+      <td>{{u.role}}</td>
+      <td><button class="btn-is-auth" *ngIf="!u.banned && u.role !='Admin'" (click)="onSubmit(u.userID)">Cấm</button><button class="btn-is-auth" *ngIf="u.banned && u.role !='Admin'" (click)="onSubmit(u.userID)">Bỏ cấm</button></td>
+    </tr>
+  </table>
+</div>
+

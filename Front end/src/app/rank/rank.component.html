@@ -1,0 +1,28 @@
+
+
+<div style="min-height: 500px">
+  <h1 style="margin-top: 70px; color: white; display: flex;
+  justify-content: center;
+  align-items: center;">Top 50 thành viên có tổng điểm cao nhất</h1>
+  <h4 style="margin-top: 70px; color: white; display: flex;
+  justify-content: center;
+  align-items: center;">Xếp hạng của bạn: {{rank.rank}}</h4>
+  <div style="display: flex;
+  justify-content: center;
+  align-items: center; margin-bottom: 100px; margin-top: 30px">
+    <table style="border-radius: 8px; border: 1px solid white; color: white">
+      <tr>
+        <th style="width: 120px; height: 30px">Xếp hạng</th>
+        <th style="width: 290px">User name</th>
+        <th style="width: 120px">Point</th>
+        <th style="width: 300px">Role</th>
+      </tr>
+      <tr *ngFor="let u of user; let i = index" style="text-align: center">
+        <td  style="height: 30px">{{i+1}}</td>
+        <td >{{u.username}}</td>
+        <td >{{u.point}}</td>
+        <td >{{u.role}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

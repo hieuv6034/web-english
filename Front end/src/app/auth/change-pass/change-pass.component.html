@@ -1,0 +1,15 @@
+
+<div id='login-form'class='login-page' style="height: 650px">
+  <div class="form-box">
+    <h1 style="color: white; margin-left: 30%; margin-top: 30px">
+      Đổi mật khẩu
+    </h1>
+    <form id='login' class='input-group-login'>
+      <input  type='text'class='input-field'placeholder='Enter username' required [(ngModel)]="model.username" name="password">
+      <input  type='password'class='input-field'placeholder='Enter old password' required [(ngModel)]="model.password" name="password">
+      <input  type='password'class='input-field'placeholder='Enter new password' required [(ngModel)]="model.newpass" name="password">
+      <button  style="margin-top: 30px" type='submit'class='submit-btn' (click)="onSubmit()" >Thay đổi</button>
+    </form>
+  </div>
+</div>
+

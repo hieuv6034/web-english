@@ -1,0 +1,31 @@
+<div class="hero">
+  <nav >
+<h2 class="logo" routerLink=""><span>M</span>y <span>E</span>nglish</h2>
+<!--    <h2 class="logo" routerLink=""><img src="assets/pngegg.png" style="width: 200px; margin-top: -20px"/></h2>-->
+    <ul>
+      <li><a href="">Trang chủ</a></li>
+      <li><a href="lesson">Khóa học</a></li>
+      <li><a href="exam">Làm test</a></li>
+      <li><a href="rank">Xếp hạng</a></li>
+      <li><a *ngIf="hiddem2" href="https://www.facebook.com/profile.php?id=100010411335621">Liên hệ</a></li>
+      <li><a *ngIf="!hiddem2" href="manage"  style="margin-left: -50px">Quản lý</a></li>
+    </ul>
+    <a [hidden]="hidden" href="auth/login" class="btn">Login</a>
+    <a [hidden]="!hidden" href="change" class="btn-is-auth">Đổi mật khẩu</a>
+    <a [hidden]="!hidden" (click)="logout()" class="btn-is-auth">Đăng xuất</a>
+  </nav>
+</div>
+<div>
+  <router-outlet>
+  </router-outlet>
+</div>
+<footer>
+  <p><span>M</span>y <span>E</span>nglish</p>
+  <p>Please click on the link below to follow us:</p>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-dribbble"></i></a>
+  </div>
+  <p class="end">Develop By Team 8</p>
+</footer>
